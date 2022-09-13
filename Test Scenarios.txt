@@ -1,0 +1,7 @@
+** UI Tests
+Test that a user can apply for a loan. This includes filling out several web page forms that will result in the creation an account. The applicant will also be presented with loan application details. 
+Log the user out and back in with email/password used during application proces. Verify that the loan details presented to the user after logging in are identical to the details presented to him/her during the application process.
+
+** API Tests
+1. Make a rest call to retrieve loan application details with a valid UUID and ensure you get a response code of 200. Ensure the response body data has a field for "productType" and it's value is "PERSONAL_LOAN"
+2. Make a rest call to retireve loan application details with an invalid UUID and ensure you get a response code of 404. 
